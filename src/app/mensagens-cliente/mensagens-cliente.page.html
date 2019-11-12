@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: red"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-button (click)="goBack()">
+            <ion-icon slot="icon-only" name="rewind" color="danger"></ion-icon>
+          </ion-button>
+        <!-- <img src="../assets/icon/favicon.png" /> -->
+    </ion-buttons>
+    <ion-title>            
+      IMPACT Shop :: Contato
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h2>Opa? Tudo bem <span style="color: red; font-weight: bolder"> {{ nomeUsuario }}</span> ? <br>Aqui você entra em contato com a Impact Shop.</h2>
+  <p>Pergunte-nos sobre as promoções, lançamentos de produtos, qualquer coisa que manteremos contato!</p>
+
+  <div class="divFormulario">
+    
+    <ion-list> 
+     
+      <ion-item>
+        <ion-label position="floating">Sua mensagem para nós</ion-label>
+        <ion-textarea [(ngModel)]="txtMensagem" rows="10" required></ion-textarea>
+      </ion-item>
+  
+      <ion-button expand="block" style="max-width:95%; margin:auto; margin-bottom: 10px; margin-top: 20px;text-transform: none; font-size:0.8em" color="danger" (click)="goSubmit()">Enviar Cadastro</ion-button>  
+
+    </ion-list>
+  </div>
+</ion-content>

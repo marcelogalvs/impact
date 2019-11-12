@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: red"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-button (click)="goBack()">
+            <ion-icon slot="icon-only" name="rewind" color="danger"></ion-icon>
+          </ion-button>
+        <!-- <img src="../assets/icon/favicon.png" /> -->
+    </ion-buttons>
+    <ion-title>            
+      IMPACT Points
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h2>E aí? Afim de trabalhar com a gente?</h2>
+  <p>Então preencha todos os campos do formulário abaixo explicando "por que a Impact Shop deve te contratar?"</p>
+
+  <div class="divFormulario">
+    
+    <ion-list> 
+        <h2 style="color: red; font-weight: bold; margin-top: 10px; background: #FFF">Formulário de cadastro</h2>
+      
+      <ion-item>
+        <ion-label position="floating">Nome Completo</ion-label>
+        <ion-input [(ngModel)]="txtNome" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Idade</ion-label>
+        <ion-input type="number" [(ngModel)]="txtIdade" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Onde mora?</ion-label>
+        <ion-input [(ngModel)]="txtEndereco" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Telefone</ion-label>
+        <ion-input [(ngModel)]="txtTelefone" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Sua formação escolar</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="txtFormacao" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Cursos extras curriculares</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="txtCursos" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Experiencia profissional</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="txtProfissional" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fale seus 3 maiores defeitos</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="txtDefeitos" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fale suas 3 maiores qualidades</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="txtQualidades" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Qual seu objetivo profissional para daqui 5 anos?</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="txtObjetivosProfissionais" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Qual seu objetivo pessoal para daqui 5 anos?</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="txtObjetivosPessoais" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Por que devemos te contratar?</ion-label>
+        <ion-textarea rows="5" [(ngModel)]="txtPorque" required></ion-textarea>
+      </ion-item>
+
+      <!-- <ion-item>
+        <ion-label position="floating">{{ uploadText }}</ion-label>
+        <ion-button size="full" expand="full" style="max-width:90%; margin:auto; margin-bottom: 10px; margin-top: 20px;text-transform: none; font-size:0.8em" (click)="upLoadFile()"> Arquivo Vídeo</ion-button>
+      </ion-item> -->
+
+      <ion-button size="full" expand="full" style="max-width:90%; margin:auto; margin-bottom: 10px; margin-top: 20px;text-transform: none; font-size:0.8em" color="danger" (click)="goSubmit()">Enviar Cadastro</ion-button>  
+
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,28 @@
+ion-toolbar {
+  --background: #000;
+  color: white;
+  font-size: 10px;
+}
+
+ion-buttons img{
+  margin-right:10px;
+  width: 30px;
+  height: auto;
+}
+
+ion-title {
+  font-size:13px;
+}
+
+ion-content {
+  --ion-background-color:#000;  
+}
+
+ion-slides{
+  height: 85vh !important;
+  color: white;
+}
+
+ion-slide{
+  flex-direction: column;
+}

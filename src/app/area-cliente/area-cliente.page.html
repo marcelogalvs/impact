@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: red"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-button (click)="goBack()">
+          <ion-icon slot="icon-only" name="rewind" color="danger"></ion-icon>
+        </ion-button>
+        <!-- <img src="../assets/icon/favicon.png" /> -->
+    </ion-buttons>
+    <ion-title>            
+      Área do Cliente
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="logo-card">
+      <img src="../assets/icon/favicon.png" width="20%" />
+      <p>Impact Área do Cliente</p>
+  </div>
+
+  <div class="conteudo"*ngIf="nomeUsuario == null">
+    <p>Faça seu login aqui e fique por dentro da sua pontuação, seus dados, perfil vestuário e das promoções especialmente criadas para você.</p>
+  </div>
+
+  <div class="conteudo"*ngIf="nomeUsuario != null">
+      <p>Bem vindo de volta <span style="color: red; font-weight: bolder">{{ nomeUsuario }}</span>.</p>
+    </div>
+
+  <!-- <div class="cash-back">
+    <img src="../../assets/icones/cashBack.png" />
+  </div> -->
+
+  <ion-list>
+    <ion-item (click)='goLogin()' *ngIf="nomeUsuario==null">
+      <ion-label>Fazer Login</ion-label>
+      <ion-icon name="md-cloud-done" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)='goCadastro()' *ngIf="nomeUsuario==null">
+      <ion-label>Cadastre-se</ion-label>
+      <ion-icon name="md-contact" slot="end"></ion-icon>
+    </ion-item>
+      
+    <ion-item (click)='goDados()' *ngIf="nomeUsuario!=null">
+      <ion-label>Acesse seus dados</ion-label>
+      <ion-icon name="md-contact" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="goPerfilCliente()" *ngIf="nomeUsuario!=null" >
+      <ion-label >Perfil Vestuário</ion-label>
+      <ion-icon name="md-brush" slot="end"></ion-icon>
+    </ion-item>
+    
+    <ion-item (click)="goImpactPoints()" *ngIf="nomeUsuario!=null">
+      <ion-label>Impact Points</ion-label>
+      <ion-icon name="md-cash" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="goMensagens()" *ngIf="nomeUsuario!=null">
+      <ion-label>Contato Impact </ion-label>
+      <ion-icon name="md-mail" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item *ngIf="nomeUsuario!=null">
+      <ion-label style="color: red; font-weight: bold" (click)="goLogout()">Fazer Logout</ion-label>
+      <ion-icon  style="color: red" name="md-exit" slot="end"></ion-icon>
+    </ion-item>
+    <!-- <ion-button expand="block" color="dark" size="small" style="max-width:90%; margin: auto; margin-top: 15px; font-size:0.6em">cadastre-se</ion-button> -->
+  </ion-list>
+
+</ion-content>

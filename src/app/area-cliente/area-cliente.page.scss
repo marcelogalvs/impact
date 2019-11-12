@@ -1,0 +1,106 @@
+ion-toolbar {
+    --background: #222;
+    color: white;
+    font-size: 10px;
+}
+
+ion-buttons img{
+    margin-right:10px;
+    width: 30px;
+    height: auto;
+}
+
+ion-title {
+    font-size:13px;
+}
+
+ion-label {
+    font-size: 0.8rem;
+    color: #FFF;
+}
+
+ion-content {
+    --ion-background-color:#000;
+}
+
+ion-list{
+    max-width: 80%;
+    margin:auto;
+    margin-top: 50px;
+}
+ion-item {
+    --color: #FFF;
+    font-size: 0.8em;
+}
+
+ion-icon {
+    width: 20px;
+    height: 20px;
+    --color: white;
+    color: white;
+}
+.logo-card {
+    position: relative;
+    width: 99%;
+    height: 190px;
+    margin: 0 auto;
+    margin-top: -25px;
+    background: #222;
+}
+
+.logo-card img {
+    width:20%;
+    height: auto;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-left:40%;
+}
+.logo-card p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #FFF;
+    margin-top:10px;
+}
+
+.conteudo {
+    position: relative;
+    margin: auto;
+    width:90%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.conteudo p {
+    position: relative;
+    width:70%;
+    margin:auto;
+    text-align: center;
+    font-size: 0.8em;
+    color: #CCC;
+    margin-top:10px;
+}
+
+.cash-back{
+    position: relative;
+    width: 99%;
+    height: 190px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+.cash-back img {
+    width:20%;
+    height: auto;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-left:40%;
+}
+.cash-back p {
+    text-align: center;
+    font-size: 0.8em;
+    color: #CCC;
+    margin-top:10px;
+}
+h4 {
+    color: #FFF;
+    text-align: center;
+}

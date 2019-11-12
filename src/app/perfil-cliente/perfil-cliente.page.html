@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: red"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-button (click)="goBack()">
+            <ion-icon slot="icon-only" name="rewind" color="danger"></ion-icon>
+          </ion-button>
+        <!-- <img src="../assets/icon/favicon.png" /> -->
+    </ion-buttons>
+    <ion-title>            
+      IMPACT Shop :: Perfil do Cliente
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h2>E aí <span style="color: red; font-weight: bolder"> {{ nomeUsuario }}</span> ? Qual seu perfil?</h2>
+  <p>Preencha o formulário abaixo que veremos o que melhor se encaixa pra você!</p>
+
+  <div class="divFormulario">
+    
+    <ion-list> 
+      <h2 style="color: red; font-weight: bold; margin-top: 10px; background: #FFF">Cadastro de Perfil de Vestuário</h2>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <div class="divImage">
+                <img src="../../assets/imagens/perfil/camiseta.png" />
+              </div>
+            </ion-col>
+            <ion-col size="10">
+                <ion-item>
+                    <ion-label position="floating">Camiseta</ion-label>
+                    <ion-select placeholder="Selecione" [(ngModel)]="txtCamiseta">
+                        <ion-select-option value="PP">PP</ion-select-option>
+                        <ion-select-option value="P">P</ion-select-option>
+                        <ion-select-option value="M">M</ion-select-option>
+                        <ion-select-option value="G">G</ion-select-option>
+                        <ion-select-option value="GG">GG</ion-select-option>
+                        <ion-select-option value="XG">XG</ion-select-option>
+                      </ion-select>
+                  </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <div class="divImage">
+                <img src="../../assets/imagens/perfil/bermuda.png" />
+              </div>
+            </ion-col>
+            <ion-col size="10">
+                <ion-item>
+                    <ion-label position="floating">Bermuda/Shorts</ion-label>
+                    <ion-select placeholder="Selecione" [(ngModel)]="txtBermuda">
+                        <ion-select-option value="34">34</ion-select-option>
+                        <ion-select-option value="36">36</ion-select-option>
+                        <ion-select-option value="38">38</ion-select-option>
+                        <ion-select-option value="40">40</ion-select-option>
+                        <ion-select-option value="42">42</ion-select-option>
+                        <ion-select-option value="44">44</ion-select-option>
+                        <ion-select-option value="46">46</ion-select-option>
+                        <ion-select-option value="48">48</ion-select-option>
+                      </ion-select>
+                  </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <div class="divImage">
+                <img src="../../assets/imagens/perfil/calca.png" />
+              </div>
+            </ion-col>
+            <ion-col size="10">
+                <ion-item>
+                    <ion-label position="floating">Calça</ion-label>
+                    <ion-select placeholder="Selecione" [(ngModel)]="txtCalca">
+                        <ion-select-option value="34">34</ion-select-option>
+                        <ion-select-option value="36">36</ion-select-option>
+                        <ion-select-option value="38">38</ion-select-option>
+                        <ion-select-option value="40">40</ion-select-option>
+                        <ion-select-option value="42">42</ion-select-option>
+                        <ion-select-option value="44">44</ion-select-option>
+                        <ion-select-option value="46">46</ion-select-option>
+                        <ion-select-option value="48">48</ion-select-option>
+                      </ion-select>
+                  </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <div class="divImage">
+                <img src="../../assets/imagens/perfil/tenis.png" />
+              </div>
+            </ion-col>
+            <ion-col size="10">
+                <ion-item>
+                    <ion-label position="floating">Calçado</ion-label>
+                    <ion-select placeholder="Selecione" [(ngModel)]="txtTenis">
+                        <ion-select-option value="34">34</ion-select-option>
+                        <ion-select-option value="35">35</ion-select-option>
+                        <ion-select-option value="36">36</ion-select-option>
+                        <ion-select-option value="37">37</ion-select-option>
+                        <ion-select-option value="38">38</ion-select-option>
+                        <ion-select-option value="39">39</ion-select-option>
+                        <ion-select-option value="40">40</ion-select-option>
+                        <ion-select-option value="41">41</ion-select-option>
+                        <ion-select-option value="42">42</ion-select-option>
+                        <ion-select-option value="43">43</ion-select-option>
+                        <ion-select-option value="44">44</ion-select-option>
+                        <ion-select-option value="45">45</ion-select-option>
+                        <ion-select-option value="46">46</ion-select-option>
+                        </ion-select>
+                  </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      
+      <ion-button expand="block" style="max-width:95%; margin:auto; margin-bottom: 10px; margin-top: 20px;text-transform: none; font-size:0.8em" color="danger" (click)="goSubmit()">Salvar Perfil</ion-button>  
+
+    </ion-list>
+  </div>
+</ion-content>

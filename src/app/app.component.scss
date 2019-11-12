@@ -1,0 +1,48 @@
+ion-content {
+    --background: url("../assets/imagens/backMenu.jpg");
+    --background-repeat: no-repeat;
+    --background-size: cover;
+    --background-color: black !important;
+}
+ion-toolbar {
+    --background: #000;
+    color: white;
+    font-size: 10px;
+}
+
+ion-buttons img{
+    // margin-right:30px;
+    width: 30px;
+    height: auto;
+}
+
+img {
+    margin-right: 20px;
+}
+
+ion-title {
+    font-size:13px;
+}
+
+ion-item {
+    font-size: 0.8rem;
+    --background: transparent !important;
+    max-height: 50px;
+    color: #CCC;
+    
+}
+
+ion-icon{
+    color: #f22613;
+    margin-right: 15px;
+}
+
+ion-label {
+    font-weight: lighter;
+}
+
+ion-list {
+    background: transparent !important;
+}
+
+

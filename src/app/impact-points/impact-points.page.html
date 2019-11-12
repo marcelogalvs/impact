@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: red"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-button (click)="goBack()">
+            <ion-icon slot="icon-only" name="rewind" color="danger"></ion-icon>
+          </ion-button>
+        <!-- <img src="../assets/icon/favicon.png" /> -->
+    </ion-buttons>
+    <ion-title>            
+      IMPACT Points
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="logo-card">
+      <img src="../assets/icon/favicon.png" width="20%" />
+      <p>Impact Points</p>
+  </div>
+<!-- 
+  <div class="conteudo" *ngIf="nomeUsuario != null">
+    <p>Ola, <span style="color:red; font-weight:bolder; font-size: 15px">{{ nomeUsuario }}</span>,
+      <br>aqui você fica por dentro da sua pontuação e as promoções especiais para você.</p>
+  </div> -->
+
+  <div class="conteudo" *ngIf="nomeUsuario != null">
+    <p>Ola, <span style="color:red; font-weight:bolder; font-size: 15px">{{ nomeUsuario }}</span></p>
+  </div>
+
+  <div class="cash-back" *ngIf="nomeUsuario != null">
+    <img src="../../assets/icones/cashBack.png" />
+    <p>Sua pontuação atual é de:</p>
+    <h3>{{ pontuacaoUsuario }}</h3>
+  </div>
+
+  <div class="cash-back" *ngIf="nomeUsuario == null">
+    <img src="../../assets/icones/cashBack.png" />
+    <p>Sua pontuação atual é de:</p>
+    <h3>????</h3>
+  </div>
+
+</ion-content>
+
+<!-- <ion-footer>
+  <p *ngIf="nomeUsuario == null">Não consegue visualizar seus pontos? Faça seu login!</p>
+  <ion-button *ngIf="nomeUsuario == null" size="medium" expand="block" style="max-width:85%; margin:auto; margin-bottom: 0px" color="danger" (click)="doLogin()">Acessar</ion-button>
+  <br>
+  <p *ngIf="nomeUsuario == null">Ainda não é cliente Impact? Faça seu cadastro!</p>
+  <ion-button *ngIf="nomeUsuario == null" expand="block" color="primary" style="max-width:85%; margin:auto; margin-bottom: 10px" (click)="goCadastro()">Cadastre-se agora</ion-button>
+  <ion-button *ngIf="nomeUsuario != null" expand="block" color="dark" size="medium" style="max-width:85%; margin: auto; margin-top: 5px; font-size:1em; margin-bottom: 10px" (click)="goLogout()">Logout</ion-button>
+</ion-footer> -->

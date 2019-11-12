@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button style="color: red"></ion-menu-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+          <ion-button (click)="goBack()">
+              <ion-icon slot="icon-only" name="rewind" color="danger"></ion-icon>
+            </ion-button>
+          <!-- <img src="../assets/icon/favicon.png" /> -->
+      </ion-buttons>
+      <ion-title>            
+        IMPACT Shop :: Cadastro
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <h2>E aí? Afim de fazer parte da Familia Impact?</h2>
+    <p>Então preencha todos os campos do formulário abaixo!"</p>
+  
+    <div class="divFormulario">
+      
+      <ion-list> 
+          <h2 style="color: red; font-weight: bold; margin-top: 10px; background: #FFF">Formulário de cadastro</h2>
+        
+        <ion-item>
+          <ion-label position="floating">Nome Completo</ion-label>
+          <ion-input [(ngModel)]="txtNome" required></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Telefone</ion-label>
+          <ion-input type="number" [(ngModel)]="txtTelefone" required></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Email/Login</ion-label>
+          <ion-input [(ngModel)]="txtEmail" type="email" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Senha</ion-label>
+          <ion-input [(ngModel)]="txtSenha" required></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating"> Cidade</ion-label>
+          <ion-input [(ngModel)]="txtCidade" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Nascimento</ion-label>
+          <ion-datetime displayFormat="DD/MM/YYYY" in="1950-01-01" max="2012-12-09" [(ngModel)]="txtNascimento" ></ion-datetime>
+        </ion-item>
+  
+        
+    
+        <ion-button expand="block" style="max-width:95%; margin:auto; margin-bottom: 10px; margin-top: 20px;text-transform: none; font-size:0.8em" color="danger" (click)="goSubmit()">Enviar Cadastro</ion-button>  
+  
+      </ion-list>
+    </div>
+  </ion-content>
+  

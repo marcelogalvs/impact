@@ -1,0 +1,62 @@
+ion-header {
+    margin-top: 0px;
+    background: url('../../assets/imagens/backAcessorios.jpg') no-repeat;
+    height: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ion-footer{
+  background: black!important;
+}
+
+ion-toolbar {
+    --background: transparent !important;
+    color: white;
+    font-size: 10px;
+  }
+  
+  ion-buttons img{
+    margin-right:10px;
+    width: 30px;
+    height: auto;
+  }
+  
+  ion-title {
+    font-size:13px;
+  }
+  
+  ion-content {
+    --ion-background-color:#000;  
+  }
+
+  ion-searchbar{
+    --placeholder-color: white;
+    --icon-color: red;
+    --color: white;
+  }
+
+  ion-item{
+    --color: white;
+    margin-left: -15px;
+  }
+
+  ion-item h2 {
+    font-weight: bolder;
+    color: red;
+  }
+  
+  ion-item h3 {
+    margin-top: 2px;
+    font-weight: 100;
+    color: white;
+    font-size: 0.8em;
+  }
+
+  ion-item p {
+    margin-top: 2px;
+    font-weight: lighter;
+    color: gray;
+    font-style: italic;
+    font-size: 0.6em;
+  }
